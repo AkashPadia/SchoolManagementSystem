@@ -10,13 +10,18 @@ namespace SchoolManagementSystem.Models
     {
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Student Name")]
         public string StudentName { get; set; }
         [Required]
+        [Display(Name ="Roll Number")]
         public string RollNumber { get; set; }
         [Required]
+        [Display(Name ="Father's Name")]
         public string FatherName { get; set; }
         [Required]
+        [Display(Name = "Mother's Name")]
         public string MotherName { get; set; }
+        [Display(Name = "Date Of Birth")]
         public DateTime DateOfBirth { get; set; }
         [Required]
         public byte Gender { get; set; }

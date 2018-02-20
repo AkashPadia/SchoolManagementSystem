@@ -1,0 +1,63 @@
+﻿@model SchoolManagementSystem.Models.Student
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Student</h2>
+
+<div class="container">
+    @using (Html.BeginForm("Create", "Students"))
+    {
+        <div class="row">
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.StudentName)
+                @Html.TextBoxFor(m => m.StudentName, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.RollNumber)
+                @Html.TextBoxFor(m => m.RollNumber, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.FatherName)
+                @Html.TextBoxFor(m => m.FatherName, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.MotherName)
+                @Html.TextBoxFor(m => m.MotherName, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.DateOfBirth)
+                @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.Gender)
+                @Html.TextBoxFor(m => m.Gender, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.Class)
+                @Html.TextBoxFor(m => m.Class, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.Contact)
+                @Html.TextBoxFor(m => m.Contact, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.Address)
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.City)
+                @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.State)
+                @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.Pincode)
+                @Html.TextBoxFor(m => m.Pincode, new { @class = "form-control" })
+            </div>
+        </div>
+    }
+</div>
