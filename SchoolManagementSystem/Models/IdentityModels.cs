@@ -20,8 +20,8 @@ namespace SchoolManagementSystem.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+        public DbSet<Student> Students { get; set; }
+        public ApplicationDbContext() : base("name=SchoolManagementSystemCS")
         {
         }
 
